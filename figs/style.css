@@ -211,8 +211,8 @@ hr {
     clear: both;
 }
 .pico img {
-    height: 205px;
-    width: 200px;
+    height: 120px;
+    width: 250px;
     border-radius: 5px;
     border: 1px solid #74d8df;
 }
@@ -227,8 +227,8 @@ hr {
     clear: both;
 }
 .pico2 img {
-    height: 145px;
-    width: 140px;
+    height: 120px;
+    width: 120px;
     border-radius: 5px;
     border: 1px solid #999;
 }
