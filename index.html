@@ -43,8 +43,13 @@
           <img src="./figs/sharif.png">
         </div>
         <div class="desc">
-          <p align="justify" > Now, I am a research assistant at Electronics Research Institute (ERI), Sharif University of Technology. I am working on Voice Activity Detection (VAD) module,
-          Speech Enhancement (SE) module and Group Sparsity (Group Selection).  </p>
+          <p align="justify" >
+            I am a research assistant at the Electronics Research Institute (ERI) of Sharif University of Technology. I worked on functional
+             Persian language speech processing modules including Automatic Speech Recognition (ASR), Speech Enhancement (SE), Few-Shot Keyword Spotting (FSKWS),
+              and Voice Activity Detection (VAD), as well as adversarial attacks and the robustness of deep neural networks (DNNs). I have been as a coordinator at
+               ERI for a period and contributed to the publication of a paper on designing fast gradual sparse attacks to DNNs in the Elsevier EAAI journal.
+               I am focusing on Retrieval-Augmented Generation (RAG), and the concept of sparsity in grouping and overlapping.
+          </p>
         </div>
       </div>
 
@@ -57,8 +62,9 @@
           <img src="./figs/sharif.png">
         </div>
         <div class="desc">
-          <p align="justify" >My last degree was M.Sc. in Comunications System at Sharif University of Technology. I published one paper about designing low coherent measurement
-           matrix in IEEE SPL journal. I was a Teaching Assistant for Fundamental of Electrical Engineering course.</p>
+          <p align="justify" >My last degree was M.Sc. in Comunications System at Sharif University of Technology. My M.Sc. project 
+            was about designing sparse imperceptible adversarial attacks to DNNs. I published a paper about designing low coherent
+             measurement matrix in IEEE SPL journal. I was a Teaching Assistant for Fundamental of Electrical Engineering course.</p>
         </div>
       </div>
 
@@ -82,7 +88,40 @@
       <div id="pet-projects" class="container">
         <div class="ctitle">projects</div>
         
-                  
+        <div class="project">
+          <div class="pico"><img src="./filgs/fskws.jpg"></div>
+          <div class="pdesc"><b>Few-Shot Keyword Spotting (FSKWS)</b> <p align="justify" > This project involved recognizing a specific keyword with very 
+            limited training data. This approach allows us to change the target keyword with as few as five samples or fewer. We prepared a rich dataset
+             in the Persian language for pretraining using a prototypical network. Additionally, we implemented streaming capabilities
+              for real-time keyword spoting.
+            </p>
+          </div>
+              <div class="pend"></div>
+            </div>  
+
+
+            <div class="project">
+          <div class="pico"><img src="./filgs/GSA.jpg"></div>
+          <div class="pdesc"><b>Designing Fast Gradual Sparse Attacks to Deep Neural Networks</b> <p align="justify" > In this paper,
+            we propose a new algorithm to design fast, sparse adversarial attacks to DNNs using proximal-based optimization methods. 
+            This algorithm uses ℓ1 norm, ℓ0 norm, and the Smoothly Clipped Absolute Deviation (SCAD) function for sparsity
+             regularization. In addition, it starts with a dense attack and gradually makes it sparse using the penalty method. 
+            </p>
+          </div>
+              <div class="pend"></div>
+            </div>  
+
+            <div class="project">
+              <!--<div class="pico"><img src="./filgs/VAD.png"></div>-->
+              <div class="pdesc"><b>Speech Enhancement (SE)</b> <p align="justify" > The goal was to prepare a punctually efficient 
+                SE module before the ASR system to enhance noisy input speech so that the resulting ASR embedded
+                 outputs become close to the corosponding clean ones. The noise was mostly environmental (both natural and artificial),
+                  also reverberation  was considered a little among the input speech.
+                </p>
+              </div>
+                  <div class="pend"></div>
+                </div>  
+
                 <div class="project">
                   <div class="pico"><img src="./figs/VAD.png"></div>
                   <div class="pdesc"><b>Voice Activity Detection (VAD)</b> <p align="justify" > This project was about detection of speech and non-speech for each frame of audio. This module is needed 
@@ -106,13 +145,13 @@
                 <div class="project">
                   <div class="pico"><img src="./figs/LSEAp.jpg"></div>
                   <div class="pdesc"><b>Designing Low Coherent Measurement Matrix</b> <p align="justify" >This is my first paper in IEEE SPL. It is about designing
-                     low coherent measurement matrix with controlled spectral norm via an efficient approximation of ty ℓ∞-norm. Compressed
+                     low coherent measurement matrix with controlled spectral norm via an efficient approximation of ty ℓ∞ norm. Compressed
                       Sensing (CS) is targeted at reconstructing a signal from a small set of measurements, if the signal is sparse
                     in some domains. In this respect, a low coherent measurement matrix plays an important role. In this letter, an efficient approximation
-                    of ℓ∞-norm based on the soft maximum was introduced to design a low coherent measurement matrix with a controllable
+                    of ℓ∞ norm based on the soft maximum was introduced to design a low coherent measurement matrix with a controllable
                     spectral norm. The proposed approximation, called Logarithm of Sum of Exponential Absolute values (LSEAp), is convex (similar
-                    to ℓ∞-norm) and almost smooth. Acordingly, we designed a low coherent measurement matrix with a small spectral norm via minimization
-                    of the ℓ∞-norm of the Gram matrix. The resulting problem was not convex but our simulations show that the LSEAp leads to
+                    to ℓ∞ norm) and almost smooth. Acordingly, we designed a low coherent measurement matrix with a small spectral norm via minimization
+                    of the ℓ∞ norm of the Gram matrix. The resulting problem was not convex but our simulations show that the LSEAp leads to
                     an improved design of the measurement matrix, as compared to current methods.</p>
                   </div>
                       <div class="pend"></div>
@@ -121,17 +160,11 @@
                     <div class="project">
                       <div class="pico2"><img src="./figs/attack.png"></div>
                       <div class="pdesc"><b>Adversarial Attack to Deep Learning Networks</b> <p align="justify" >
-                        This project was my master thesis that evaluates the robustness of deep networks against the designed adversarial attack via
-                        imperceptible sparse perturbation on images (Cifar10 and ImageNet). Thereby, the important challenges are controlling the sparsity of the perturbations and the amount of
-                         perturbation of the each element. For these, I used ℓ∞ and ℓ0 norms for perturbed pixels. The proposed method
-                        of this project implement sparsity and imperceptibility criteria by SL0 and LSEAp functions,
-                        respectively. These functions granted much better approximations for these criteria than other
-                        functions because both are composed of exponential functions. In this project, proposed adversarial
-                        attacks were developed in a way that the sparse element types are convertable into sparse
-                        pixel or grouped types. They achieved imperceptibility because the
-                        functions are able to approximate the sparsity and the ℓ∞-norm
-                        considerably, and the LSEAp function, unlike other methods, tries to reduce the ℓ∞-norm
-                        according to the input pattern. Both these functions are implemented easily by a hardware.</p>
+                         This project evaluates the robustness of DNNs against a designed adversarial attack using pixel-wise or group-wise
+                           (structured) perturbations on images (CIFAR-10 and ImageNet). The key challenges include controlling the sparsity of perturbed units and 
+                           the perturbations intensity. The proposed method implements sparsity and imperceptibility criteria using the Smoothed ℓ0 
+                           function and an approximation of ℓ∞ norm, respectively. In this project, the proposed sparse adversarial attacks were developed 
+                           such that the element-wise perturbations can be converted into either pixel-wise or group perturbations.</p>
                       </div>
                           <div class="pend"></div>
                         </div>
@@ -142,7 +175,7 @@
                          perturbation of the each element. For these, I used ℓ∞ and ℓ0 norms. The other methods for designing adversarial attacks, often seek to
                           minimize the number of the perturbed elements of the adversarial image by replacing ℓ0 norm with $l_1$ norm, $l_2$norm
                         or search methods that are focuce on all elements of RGB. While in reality, the number of perturbed pixels is important. The other methods
-                         for designing the imperceptible adversarial attacks often use clipping (projecting on the ℓ∞-normball) which requires knowing
+                         for designing the imperceptible adversarial attacks often use clipping (projecting on the ℓ∞ normball) which requires knowing
                         the threshold of the desirable maximum value of perturbations. The proposed method
                         of this project implement sparsity and imperceptibility criteria by SL0 and LSEAp functions,
                         respectively. These functions grant much better approximations for these criteria than other
@@ -150,10 +183,10 @@
                         attacks are developed in a way that the sparse element types are convertable into sparse
                         pixel or grouped types. The results show that the adversarial attacks proposed in this project
                         have the perfect attack accuracy for networks witch are used in this project (even the one witch
-                        is resistant to adversarial attacks) and render better controlling over the sparsity and the ℓ∞-norm
+                        is resistant to adversarial attacks) and render better controlling over the sparsity and the ℓ∞ norm
                         criteria, compared to the other methods. They achieved imperceptibility because the
-                        functions used in this project were able to approximate the sparsity and the ℓ∞-norm
-                        considerably, and the LSEAp function, unlike other methods, tries to reduce the ℓ∞-norm
+                        functions used in this project were able to approximate the sparsity and the ℓ∞ norm
+                        considerably, and the LSEAp function, unlike other methods, tries to reduce the ℓ∞ norm
                         according to the input pattern. Both these functions are implemented easily by hardware.
 
                     -->
@@ -280,7 +313,7 @@
 
       <div class="pub">
         <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9931494">Designing Low Coherent
-           Measurement Matrix With Controlled Spectral Norm Via an Efficient Approximation of ℓ∞-Norm</a> <b>(2022)</b> </div>
+           Measurement Matrix With Controlled Spectral Norm Via an Efficient Approximation of ℓ∞ norm</a> <b>(2022)</b> </div>
         <div class="pub-venue">IEEE Signal Processing Letters</div>
         <div class="pub-authors">Alireza Heshmati; Sajjad Amini; Shahrokh Ghaemmaghami; Farokh Marvasti</div>
       </div>
