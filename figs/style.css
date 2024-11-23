@@ -31,7 +31,7 @@ body {
     margin-top: 20px;
 }
 #dpic {
-    grid-column: span 6;
+    grid-column: span 5;
     text-align: right;
 }
 #ddesc {
@@ -70,9 +70,10 @@ h2 {
     }
 }
 #dpic img {
-    width: 300px;
-    height: 240px;
-    border-radius: 120px;
+    margin-top: 40px;
+    width: 180px;
+    height: 220px;
+    border-radius: 20px;
 }
 .iico {
     width: 40px;
