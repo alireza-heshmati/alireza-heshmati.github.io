@@ -36,7 +36,7 @@
 
       <div class="entry row">
         <div class="timespan">
-          2022 - . . .
+        Dec.  2022 - . . .
         </div>
         <div class="ico">
           <div class="entry-dot"></div>
@@ -53,7 +53,7 @@
 
       <div class="entry row">
         <div class="timespan">
-          2020 - 2022
+          Sep. 2020 - Sep. 2022
         </div>
         <div class="ico">
           <div class="entry-dot"></div>
@@ -67,7 +67,7 @@
 
       <div class="entry row">
         <div class="timespan">
-          2016 - 2020
+          Sep. 2016 - Jul. 2020
         </div>
         <div class="ico">
           <div class="entry-dot"></div>
@@ -85,6 +85,23 @@
       <div id="pet-projects" class="container">
         <div class="ctitle">projects</div>
         
+        <div class="project">
+          <div class="pico2"><img src="./figs/train_256.png"></div>
+          <div class="pdesc"><b>Lightweight Speaker Verification Model</b> 
+            This project focuses on verifying whether two audio files belong to the same speaker.
+             Unlike heavy speech feature extractors like WavLM, I designed a lightweight model based on
+              ECAPA-TDNN, which generates fixed-length representations for audio files of varying 
+              durations using statistical pooling. The model was trained for a speaker identification 
+              task on a dataset of 1,000 Persian speakers using supervised learning.
+            The dataset was highly imbalanced, so I conducted data analysis and preprocessing to mitigate 
+            its negative effects on training. Finally, I detached the classifier layer and retained the 
+            trained model as a feature extractor. Using this feature extractor, cosine similarity as the 
+            scoring function, and an Equal Error Rate (EER) threshold for decision-making, I developed a 
+            speaker verification system with a model size of only 13 MB, which can be further reduced by 
+            using Float16 quantization.
+          </div>
+              <div class="pend"></div>
+            </div>  
 
         <div class="project">
           <div class="pico"><img src="./figs/ATOS.png"></div>
